@@ -1,0 +1,246 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+
+    padding:15px 40px;
+    background:#ffffff;
+    border-bottom:1px solid #ddd;
+
+    position:relative;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.navbar img{
+    height:55px;
+    cursor:pointer;
+}
+
+/* ===========================
+   HAMBURGER BUTTON
+=========================== */
+
+.hamburger-btn{
+    font-size:26px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.hamburger-menu{
+
+    position:absolute;
+    top:75px;
+    left:20px;
+
+    width:260px;
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+    display:none;
+
+    z-index:1000;
+}
+
+/* Remove display:none while designing */
+/*
+.hamburger-menu{
+    display:block;
+}
+*/
+
+.common-menu,
+.guest-menu,
+.customer-menu{
+
+    padding:15px;
+}
+
+.common-menu{
+    border-bottom:1px solid #eee;
+}
+
+.guest-menu{
+    border-bottom:1px solid #eee;
+}
+
+.hamburger-menu ul{
+    list-style:none;
+}
+
+.hamburger-menu li{
+    margin:12px 0;
+}
+
+.hamburger-menu a{
+
+    text-decoration:none;
+    color:#222;
+    font-size:15px;
+}
+
+.hamburger-menu a:hover{
+
+    color:#ff4b2b;
+}
+
+/* ===========================
+   CATEGORY MENU
+=========================== */
+
+.categories ul{
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.categories a{
+
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+.categories a:hover{
+
+    color:#ff4b2b;
+}
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+
+form{
+
+    display:flex;
+    align-items:center;
+
+    border:1px solid #ccc;
+
+    border-radius:30px;
+
+    overflow:hidden;
+}
+
+form input{
+
+    border:none;
+    outline:none;
+
+    padding:10px 15px;
+
+    width:220px;
+}
+
+form button{
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:10px 16px;
+
+    cursor:pointer;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.actions{
+
+    display:flex;
+    gap:15px;
+}
+
+.actions button{
+
+    background:none;
+
+    border:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.actions button:hover{
+
+    transform:scale(1.1);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .categories{
+        display:none;
+    }
+
+    form input{
+        width:150px;
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:15px 20px;
+        gap:10px;
+    }
+
+    form{
+        display:none;
+    }
+
+    .actions{
+
+        gap:10px;
+    }
+
+    .navbar img{
+
+        height:45px;
+    }
+}
